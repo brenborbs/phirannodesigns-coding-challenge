@@ -6,7 +6,7 @@
 // const { site } = useGraphQL();
 // return <h1>{site.siteMetadata.title}</h1>;
 
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from "gatsby";
 
 export function useGraphQL() {
   const data = useStaticQuery(

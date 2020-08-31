@@ -5,6 +5,15 @@
  */
 
 // Self host fonts using Typefaces.js https://github.com/KyleAMathews/typefaces
-import 'typeface-inter';
+import "typeface-inter";
 
-import './src/css/tailwind.css';
+import "./src/css/tailwind.css";
+
+import React from "react";
+import { ProductContextProvider } from "./src/context/ProductContext";
+
+export const wrapRootElement = ({ element }) => (
+  <ProductContextProvider>{element}</ProductContextProvider>
+);
+
+export const wrapPageElement = ({ element }) => <>{element}</>;

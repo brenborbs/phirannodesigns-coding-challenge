@@ -5,3 +5,11 @@
  */
 
 // You can delete this file if you're not using it
+import React from "react";
+import { ProductContextProvider } from "./src/context/ProductContext";
+
+export const wrapRootElement = ({ element }) => (
+  <ProductContextProvider>{element}</ProductContextProvider>
+);
+
+export const wrapPageElement = ({ element }) => <>{element}</>;

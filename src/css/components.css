@@ -11,3 +11,8 @@
 body {
   @apply bg-teal-500;
 }
+
+.matches {
+  padding-right: 10rem;
+}
+

@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import { mainNavigation } from '../data/site-navigation';
 import { Logo } from './vectors';
 import { MobileMenu } from './mobile-menu';
+import { Search } from './search';
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +16,9 @@ export function Header() {
             <Link to="/" className="flex items-center flex-shrink-0">
               <Logo className="w-auto h-10 text-teal-500 transition duration-150 ease-in-out fill-current hover:text-teal-700" />
             </Link>
+            <div className="m-3">
+              <Search />
+            </div>
           </div>
           <div className="hidden space-x-8 sm:ml-6 sm:flex">
             {mainNavigation.map((node) => (

@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from "react";
+import { Link } from "gatsby";
 
-import { useGraphQL } from '../hooks';
-import { footerNavigation, socialLinks } from '../data/site-navigation';
+import { useGraphQL } from "../hooks";
+import { footerNavigation, socialLinks } from "../data/site-navigation";
 
 export function Footer() {
   const {
